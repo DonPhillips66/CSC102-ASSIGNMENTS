@@ -1,0 +1,176 @@
+<!--This tells the browser that we are sending it an HTML document to render-->
+<!DOCTYPE html>
+<!--Starts the HTML Document-->
+<html lang="en">
+
+<head>
+    <!--This will display the title as the title in tab not on actual page-->
+    <title> UAT SPACE PROGRAM </title>
+    <!--Header 1 (smallest size)-->
+    <h1 style="color: aliceblue;">Ready For Takeoff</h1>
+    <!--Start functions here-->
+    <!--First will be functions to start the countdown-->
+    <script>
+
+       
+        function startCountdown() {
+            //This var holds seconds to countdown
+            var counter = 10;
+            //1000 milliseconds = 1 second
+            var timeout = 10000;
+            //Test loop starts here
+            // A for loop needs 3 parts:
+            // 1. The initial value of the counter, aka where you start at
+            // 2. How many times do you want to do the loop
+            // 3. How do we get there
+
+            for (i=10; i>=0; i=i-1)
+            {
+                setTimeout(() => {
+                document.getElementById("countdowndisplay").innerHTML = countdown;
+                countdown = countdown -1;
+            }, timeout);
+            timeout = timeout - 1000;
+
+            {alert(i);
+            }
+            //Change order alert notified at 5 seconds-->
+            {alert(i=5);Warning Less than ½ way to launch, time left = 5 seconds
+            }
+
+            }
+            
+            //Test loop ends here
+// To Do, Make This a loop
+//************Start of the loop is here*************
+            
+
+            //Do This 10 Times, (If it doesn't work delete/ it works, but still in increments of 2..500 instead of 1000 didnt work either)
+             /*setTimeout(() => {
+                document.getElementById("countdowndisplay").innerHTML = countdown;
+                countdown = countdown -1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("countdowndisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000; 
+            setTimeout(() => {
+                document.getElementById("countdowndisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("countdowndisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("countdowndisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("countdowndisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("countdowndisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("countdowndisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("countdowndisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;*/
+            //************Start of the loop is here*************
+        
+            //This sets interval to 1 second (Try 1 dash instead of 2? didnt work)
+            setInterval(function () {
+                counter--;
+                //This will display the counter in the HTML
+                document.getElementById("countdowndisplay").innerHTML = counter;
+                //This will decrement counter by 1 (Try 1 dash instead of 2? didnt work)
+                counter--;
+                //This will stop the countdown when the counter reaches 0 (removed greater symbol)
+                if (counter =>0) {
+                    // If the counter is greater than Zero keep counting down
+                    //This will display the counter to the user.
+                    (span = document.getElementById("countdowndisplay"));
+                    span.innerHTML = counter -1;
+                }
+
+                //Check if the countdown is less than or equal to zero
+                if (counter === 0) {
+                    alert("Lift Off!")
+                    //Clear Interval
+                    clearInterval(counter);
+                
+                }
+            }, 1000);
+        };
+        //This will pause a live countdown
+        function pauseCountdown() {
+            //This will pause the countdown
+            alert("Countdown Paused");
+        };
+
+    </script>
+
+    <!--Lets make CSS to style the background image for entire page-->
+    <style>
+        body {
+            background-image: url("MarsREVOLVE.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<!---Here we have some in line CSS to change the background color to a body-->
+
+<body>
+    <h2 style="color: whitesmoke;"> Welcome to the UAT Space Program</h2>
+    <!--I want to display mission control as the banner image for this website-->
+    <img src="UATINTRO.gif" alt="space1" width="400" height="260">
+    <!--This will describe this web page-->
+    <p style="color: whitesmoke;">Today, we have a spaceship blasting off shortly to Mars</p>
+    <!--Place Buttons here that will start the countdown-->
+    <button onclick="startCountdown()">Start</button>
+    <button onclick="pauseCountdown()">Stop</button>
+
+    <!--This will display the countdown-->
+    <p style="color: whitesmoke;" id="countdowndisplay">10</p>
+
+
+     <!--W3SCHOOLS HTML AUDIO HELP-->
+    <audio controls autoplay>
+        <!--save the mp3 in folder to source from-->
+        <source src="musicback.mp3" type="audio/mpeg">
+    </audio>
+    <!--Lets say something in a large way, maybe an insrtruction so users can understand what steps
+    need to be taken to feel the full experience of this page-->
+<h4 style="color: beige;" >Turn Up The Sound!</h4>
+
+
+    <!-- place footer here!-->
+    <!--C3SCHOOLS google-->
+    <footer style="color: whitesmoke;">
+        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" font-size: small;>Houston Space Center Imagined</p>
+        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" font-size: smaller;>Author: Don Phillips<br>
+            <a href="mailto:Donmphillips66@gmail.com">donmphillips66@gmail.com</a>
+        </p>
+    </footer>
+</body>
+
+
+<!--Ends the HTML document-->
+
+</html>
