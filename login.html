@@ -1,0 +1,112 @@
+<!--Type of document-->
+    <!DOCTYPE html>
+    <!--Type of Language-->
+    <html lang="en">
+        <head>
+            <title>UAT LOGIN</title>
+            <script src="Ext.js">
+              //  function GEEKFORGEEKS()                                   
+              //  {
+              //      var name = document.forms["RegForm"]["Name"];              
+              //     
+              //      var password = document.forms["RegForm"]["Password"]; 
+              //      
+              //      if (name.value <=20)                                 
+              //      {
+              //          window.alert("Please enter your name. Max characters allowed = 20");
+              //          name.focus();
+              //          return false;
+              //      }
+                   
+            
+                    
+              //      if (password.value <= 1)                       
+              //      {
+              //          window.alert("Please enter your password. Max characters allowed = 3");
+              //          password.focus();
+              //          return false;
+              //      }
+                   
+              //      if (what.selectedIndex <= 1)                 
+              //      {
+              //          alert("Please enter your course.");
+              //          what.focus();
+              //          return false;
+              //      }
+                   
+              //      return true;
+
+              //  }</script>
+                  <!--used from module (ALL INSIDE OF THE STYLE PARAMETERS)-->
+                <style>
+                    
+                  
+        
+                   
+                GEEKFORGEEKS {                                        
+                    margin-left: 70px;
+                    font-weight: bold ;
+                    float: left;
+                    clear: left;
+                    width: 100px;
+                    text-align: left;
+                    margin-right: 10px;
+                    font-family:sans-serif,bold, Arial, Helvetica;
+                    font-size:14px;
+                }
+                   
+                div { 
+                    box-sizing: border-box;
+                    width: 100%;
+                    border: 100px solid black;
+                    float: left;
+                    align-content: center;
+                    align-items: center;
+                }
+                   
+                form {                                        
+                    margin: 0 auto;
+                    width: 600px;
+                }</style>
+                
+            </head>
+                   
+                <body>
+                    <!--Give it center image style and text style-->
+                <h1 style="text-align: center"> <img src="UATspace.jpg" alt=""></h1>    
+                <h2 style="text-align: center;">UAT MISSION CONTROL LOGIN</h2>      
+                <!--Used from module-->
+                <form name="RegForm" action="/submit.php" onsubmit="return GEEKFORGEEKS()" method="post"> 
+                      <!--Used from module-->
+                    <p>Name: <input type="text" size=65 name="Name"> </p><br> 
+                    
+                    <!--Adding color to increase visibility to the rules needed to follow to complete login-->      
+                   <p style="color: crimson;"><h3 style="color: crimson;"> Max 20 Characters</h3></p>
+                     <p>Password: <input type="text" size=65 name="Password"> </p><br>
+
+                      <!--Adding color to increase visibility to the rules needed to follow to complete login-->
+                     <p style="color: crimson;"><h3 style="color: crimson;"> Min 3 Characters</h3></p>
+                    <p>SELECT YOUR COURSE   
+                        <select type="text" value="" name="Subject">
+                            <option>CSC 102</option>
+                            <option>OTHER</option>
+                            
+                        </select></p><br><br>
+                   
+                    <p><input type="submit" value="Send" name="Submit">     
+                        <input type="reset" value="Reset" name="Reset">  
+                    </p>         
+                </form>
+
+        </head>
+
+
+        <body>
+
+
+
+
+
+        </body>
+
+    </html>
